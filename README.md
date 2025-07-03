@@ -1,15 +1,6 @@
 # 🧮 Styled Grid Calculator
 
-A sleek, responsive calculator crafted with HTML, CSS & JavaScript — perfect for learning frontend basics or embedding in your projects.
-
----
-
-## 🔗 Live Demo
-
-Try it now: [Your Live Demo URL]
-
----
-
+A sleek, responsive calculator crafted with HTML, CSS — perfect for learning frontend basics or embedding in your projects.
 
 ---
 
@@ -62,5 +53,3 @@ This project uses `eval()` for convenience. In serious applications, **avoid** `
 - Boost UX with animations (hover, click, transitions)
 
 ---
-
-## 🚀 Getting Started
