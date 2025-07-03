@@ -1,0 +1,107 @@
+/* Reset and layout */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ccc, #eee);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Calculator Outer Case */
+  .container {
+    background: #1a1a1a;
+    padding: 30px 25px;
+    border-radius: 32px;
+    width: 310px;
+    box-shadow:
+      -6px -6px 12px rgba(255, 255, 255, 0.1),
+      6px 6px 14px rgba(0, 0, 0, 0.7);
+    position: relative;
+  }
+  
+  /* Display Screen */
+  .display {
+    width: 280px;
+    height: 65px;
+    background: linear-gradient(to bottom, #cdd5a1, #a4b177);
+    border-radius: 12px;
+    margin-bottom: 25px;
+    padding: 15px;
+    text-align: right;
+    font-size: 26px;
+    color: #333;
+    border: none;
+    box-shadow:
+      inset -2px -2px 6px rgba(255, 255, 255, 0.15),
+      inset 2px 2px 6px rgba(0, 0, 0, 0.6),
+      0 0 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Grid Layout */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  
+  /* Base Button Style */
+  .btn {
+    height: 62px;
+    border: none;
+    border-radius: 14px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background: #2e2e2e;
+    cursor: pointer;
+    box-shadow:
+      inset -2px -2px 5px rgba(255, 255, 255, 0.04),
+      inset 2px 2px 8px rgba(0, 0, 0, 0.6),
+      2px 2px 5px rgba(0, 0, 0, 0.7);
+    transition: all 0.15s ease-in-out;
+  }
+  
+  .btn:hover {
+    filter: brightness(1.08);
+  }
+  
+  .btn:active {
+    transform: translateY(2px);
+    box-shadow:
+      inset 3px 3px 6px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Red "C" Button */
+  .red {
+    background: radial-gradient(circle at top left, #ff5c5c, #a80000);
+    color: white;
+    box-shadow:
+      inset -2px -2px 4px rgba(255, 255, 255, 0.2),
+      inset 2px 2px 6px rgba(0, 0, 0, 0.6),
+      0 4px #800000;
+  }
+  
+  /* Blue "=" Button */
+  .blue {
+    background: linear-gradient(to bottom, #6ec6ff, #0277bd);
+    color: white;
+    box-shadow:
+      inset -2px -2px 4px rgba(255, 255, 255, 0.2),
+      inset 2px 2px 7px rgba(0, 0, 0, 0.8),
+      0 4px #004c8c;
+  }
+  
+  /* = key spans two rows */
+  .equal {
+    grid-row: span 2;
+    height: 136px;
+  }
+  
+  /* Optional glow for LCD */
+  .display::placeholder {
+    color: rgba(60, 60, 60, 0.4);
+  }
+  
